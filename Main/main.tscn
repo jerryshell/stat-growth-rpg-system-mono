@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cojsem6pbpbe1"]
+
+[ext_resource type="Script" path="res://Main/Main.cs" id="1_m6ajj"]
+[ext_resource type="PackedScene" uid="uid://ce7qd6kkm35h" path="res://GUI/gui.tscn" id="1_q4yvc"]
+[ext_resource type="PackedScene" uid="uid://0w1tquw6gxpr" path="res://Player/player.tscn" id="2_n1ph3"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_m6ajj")
+
+[node name="Player" parent="." instance=ExtResource("2_n1ph3")]
+unique_name_in_owner = true
+position = Vector2(760, 293)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="CanvasLayer" instance=ExtResource("1_q4yvc")]
+unique_name_in_owner = true

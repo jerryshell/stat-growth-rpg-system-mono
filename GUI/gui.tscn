@@ -1,0 +1,138 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce7qd6kkm35h"]
+
+[ext_resource type="Script" path="res://GUI/GUI.cs" id="1_d5nio"]
+
+[sub_resource type="Theme" id="Theme_sj7f4"]
+default_font_size = 30
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_sj7f4")
+script = ExtResource("1_d5nio")
+
+[node name="Stat" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 35.0
+offset_right = 182.0
+offset_bottom = 328.0
+
+[node name="StatName" type="VBoxContainer" parent="Stat"]
+layout_mode = 2
+
+[node name="Class" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Class"
+
+[node name="Level" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Level"
+
+[node name="ProficiencyBonus" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Proficiency Bonus"
+
+[node name="XP" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "XP"
+
+[node name="Health" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Health"
+
+[node name="Strength" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Strength"
+
+[node name="Dexterity" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Dexterity"
+
+[node name="Constitution" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Constitution"
+
+[node name="Intelligence" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Intelligence"
+
+[node name="Wisdom" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Wisdom"
+
+[node name="Charisma" type="Label" parent="Stat/StatName"]
+layout_mode = 2
+text = "Charisma"
+
+[node name="Spacer" type="Control" parent="Stat"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="StatValue" type="VBoxContainer" parent="Stat"]
+layout_mode = 2
+
+[node name="Class" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Level" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ProficiencyBonus" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="XP" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Health" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Strength" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Dexterity" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Constitution" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Intelligence" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Wisdom" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Charisma" type="Label" parent="Stat/StatValue"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="XPProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 32.0
+offset_top = 573.0
+offset_right = 980.0
+offset_bottom = 619.0
+
+[node name="GainXP" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 572.0
+offset_right = 1111.0
+offset_bottom = 622.0
+text = "GainXP"
